@@ -22,15 +22,6 @@ AddEventHandler("ld-illegalev:esya-alindi",function()
     TriggerClientEvent('ld-illegalev:blip-kaldır', -1)
 end)
 
-RegisterServerEvent('ld-illegel-2:buy-item')
-AddEventHandler('ld-illegel-2:buy-item', function(value)
-    local xPlayer = PantCore.Functions.GetPlayer(source)
-    if value == 'parasut' and xPlayer.Functions.RemoveItem('excoin', 5) then
-        xPlayer.Functions.AddItem('parasut', 10)
-    elseif value == 'tornavida' and xPlayer.Functions.RemoveItem('excoin', 10) then
-        xPlayer.Functions.AddItem('tornavida', 1)
-    end
-end)
 -- üzümlü kekim ile ilklerimizden :(
 PantCore.Functions.CreateCallback('ld-illegalev:sure-cek', function(source, cb)
     cb(itemSure, esyaAlindi, Config.evKordinat)

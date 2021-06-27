@@ -31,7 +31,7 @@ AddEventHandler('ld-illegel-2:buy-item', function(value)
         xPlayer.Functions.AddItem('tornavida', 1)
     end
 end)
-
+-- üzümlü kekim ile ilklerimizden :(
 PantCore.Functions.CreateCallback('ld-illegalev:sure-cek', function(source, cb)
     cb(itemSure, esyaAlindi, Config.evKordinat)
 end)
